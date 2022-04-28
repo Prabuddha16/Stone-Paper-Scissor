@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+    <title>GAME</title>
+ </head>
+
+
+ <body>
+    
+     <div class="top"> 
+        <h3 style="float:left;width:33.3%;text-align:left;"><span class="box" style="box-shadow: -10px 10px 3px rgba(0,0,0,0.6);">SCORE: <span class="user"></span></span></h5>
+        <h4 style="float:left;width:33.3%;text-align:center;"><span class="box" style="box-shadow: 0px 10px 3px rgba(0,0,0,0.6);">GAMES PLAYED: <span class ="count"></span></span></h5>
+        <h3 style="float:left;width:33.3%;text-align:right;"><span class="box" style="box-shadow: 10px 10px 3px rgba(0,0,0,0.6);">COMPUTER SCORE: <span class="comp"></span></span></h5>
+     </div>
+
+     <ul>
+        <li id="PAPER" onclick="reply_click(this.id)"><i class="fa fa-hand-paper-o" id="paper"></i></li>
+        <div style="height:60px;"></div>
+        <div id="space">
+        <li id="ROCK" style="position:relative;float:left;text-align:left;" onclick="reply_click(this.id)"><i class="fa fa-hand-rock-o" id="rock"></i></li>
+        <span style="position:relative ;width:75px ; height:35px; text-align:center;margin:0;display:inline-block;"></span>
+        <li id="SCISSORS" style="position:relative;float:left;text-align:right;" onclick="reply_click(this.id)"><i class="fa fa-hand-scissors-o" id="scissors"></i></li>
+        </div>
+        <br></br>
+     </ul>
+
+     <div class="right">
+         <span style="font-size:18px;">COMPUTER: <span class="bot"></span></span>
+         <h6 class="refresh"><i class="fa fa-refresh"></i>&nbsp&nbspR&nbspE&nbspS&nbspE&nbspT</h6>
+         <h2 style="font-weight:normal;">WINNER: <span class="mid"></span></h2>
+     </div>
+
+  </body>
+</html>
